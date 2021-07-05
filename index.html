@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Page Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                 <a href="about.html">About</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div>VELOScity Tech, Inc.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-wrapper">
+            <div class="portfolio-items-wrapper">
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(Wallpaper/image1.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img class= "hover-image" src="Logos/logo1.png" alt="">
+                        </div>
+
+                        <div class="subtitle">
+                            Virtual Reality
+                        </div>
+
+                        <div class="subtitle">
+                            Experience life from a whole new dimension - with technologies that could bring you to places you have never been before
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(Wallpaper/image2.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Logos/logo2.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Drone Technology
+                        </div>
+
+                        <div class="subtitle">
+                            Hovering different plains for photography, lightweight transport, and game experience is much easier with aerial technologies.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(Wallpaper/image3.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Logos/logo3.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Digital Art
+                        </div>
+
+                        <div class="subtitle">
+                            Express your emotions with technology's way of lines, stroke, and colours that could take you to a whole new level of artistry
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(Wallpaper/image4.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Logos/logo4.png">
+                        </div>
+
+                        <div class="subtitle">
+                            HI-tech Photography
+                        </div>
+
+                        <div class="subtitle">
+                            Capture the world and its beauty in a whole new level to bring every single detail to a pixel of your new gallery      
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(Wallpaper/image5.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Logos/logo5.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Music
+                        </div>
+
+                        <div class="subtitle">
+                            Sing your heart out to the beats of music from all ages and genres with great music techs
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio-item-wrapper">
+                    <div class="portfolio-img-background" style="background-image: url(Wallpaper/image8.jpg);"></div>
+
+                    <div class="img-text-wrapper">
+                        <div class="logo-wrapper">
+                            <img src="Logos/logo6.png">
+                        </div>
+
+                        <div class="subtitle">
+                            Gaming and Entertainment
+                        </div>
+
+                        <div class="subtitle">
+                           Explore a whole new world of adventure with the best graphics to improve your gameplay with whole some fun
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem=>{
+        portfolioItem.addEventListener('mouseover', ()=> {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+    })
+
+    portfolioItems.forEach(portfolioItem=>{
+        portfolioItem.addEventListener('mouseout', ()=> {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+
+</script>
+</html>
